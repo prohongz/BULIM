@@ -1,0 +1,18 @@
+package Simulator;
+/**
+ * 
+ * @author Sim Hong Xun
+ *
+ */
+public class Truck extends Vehicle{
+	
+	Truck(){
+		super();
+		acceleration = Constant.TruckAccSpd;
+		decceleration = Constant.TruckDecSpd;
+		maxspeed = Constant.TruckSpd;
+		timegap = Constant.TruckTimeGap;
+		distgap = Constant.TruckDistGap;
+	}
+
+}

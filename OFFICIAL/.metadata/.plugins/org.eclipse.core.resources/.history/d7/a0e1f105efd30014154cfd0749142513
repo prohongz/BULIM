@@ -1,0 +1,71 @@
+package Simulator;
+
+/**Constant is used to store intermediate values between the transition from Preset interface to Simulator interface.
+ * 
+ * @author Sim Hong Xun
+ *
+ */
+public class ConstantObject {
+
+	public final int starthour =0;
+	public final int startminute =0;
+	
+	public final int endday =0;
+	
+	public final int endhour =0;
+	public final int endminute =0;
+	
+	public final double fuelcost = .0;
+	
+	public final int CDCstarth =0;
+	public final int CDCstartm =0;
+	public final int CDCendh =0;
+	public final int CDCendm =0;
+	public final int CDCcargoturnover = 0;
+	public final int CDCcargolimit = 0;
+	public final int CDCbay =0;
+	public final int CDCdemandh[] = new int[15];
+	
+	
+	public final int Factstarth =0;
+	public final int Factstartm =0;
+	public final int Factendh =0;
+	public final int Factendm =0;
+	public final int Factcargoturnover =0;
+	public final int Factcargolimit = 0;
+	public final int Factbay =0;
+	public final int Factdemandh[] = new int[15];
+	
+	
+	public final boolean Truckpriority = false;
+	
+	public final boolean TruckMode = false;
+	public final int TruckQty = 0;
+	public final double TruckSpd = .0;
+	public final double TruckAccSpd = .0;
+	public final double TruckDecSpd = .0;
+	public final double TruckTimeGap = .0;
+	public final double TruckDistGap = .0;
+	public final double TruckPoliteness = .0;
+	public final double TruckChanging = .0;
+	public final double Truckfewcargo = .0;
+	public final double Truckfewocargo = .0;
+	
+	public final boolean AgvMode = false;
+	public final int AgvQty = 0;
+	public final double AgvSpd = .0;
+	public final double AgvAccSpd = .0;
+	public final double AgvDecSpd = .0;
+	public final double AgvTimeGap = .0;
+	public final double AgvDistGap = .0;
+	public final double Agvfewcargo = .0;
+	public final double Agvfewocargo = .0;
+	
+	final double TIMESTEP_S = 0.2;   // simulation time step
+	public final int tsleep_ms = 20;
+	
+	final double scale = 0.43;
+	
+	final boolean suspended = false;
+	
+}

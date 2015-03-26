@@ -1,0 +1,136 @@
+package Simulator;
+
+/**Constant is used to store intermediate values between the transition from Preset interface to Simulator interface.
+ * 
+ * @author Sim Hong Xun
+ *
+ */
+public class ConstantObject {
+
+	public final int starthour;
+	public final int startminute;
+	
+	public final int endday;
+	
+	public final int endhour;
+	public final int endminute;
+	
+	public final double fuelcost;
+	
+	public final int CDCstarth;
+	public final int CDCstartm;
+	public final int CDCendh;
+	public final int CDCendm;
+	public final int CDCcargoturnover;
+	public final int CDCcargolimit;
+	public final int CDCbay;
+	public final int CDCdemandh[];
+	
+	
+	public final int Factstarth;
+	public final int Factstartm;
+	public final int Factendh;
+	public final int Factendm;
+	public final int Factcargoturnover;
+	public final int Factcargolimit;
+	public final int Factbay;
+	public final int Factdemandh[];
+	
+	
+	public final boolean Truckpriority;
+	
+	public final boolean TruckMode;
+	public final int TruckQty;
+	public final double TruckSpd;
+	public final double TruckAccSpd;
+	public final double TruckDecSpd;
+	public final double TruckTimeGap;
+	public final double TruckDistGap;
+	public final double TruckPoliteness;
+	public final double TruckChanging;
+	public final double Truckfewcargo;
+	public final double Truckfewocargo;
+	
+	public final boolean AgvMode;
+	public final int AgvQty;
+	public final double AgvSpd;
+	public final double AgvAccSpd;
+	public final double AgvDecSpd;
+	public final double AgvTimeGap;
+	public final double AgvDistGap;
+	public final double Agvfewcargo;
+	public final double Agvfewocargo;
+	
+	final double TIMESTEP_S;   // simulation time step
+	public final int tsleep_ms;
+	
+	final double scale;
+	
+	final boolean suspended;
+	
+	public ConstantObject(int starthour, int startminute, int endday,
+			int endhour, int endminute, double fuelcost, int cDCstarth,
+			int cDCstartm, int cDCendh, int cDCendm, int cDCcargoturnover,
+			int cDCcargolimit, int cDCbay, int[] cDCdemandh, int factstarth,
+			int factstartm, int factendh, int factendm, int factcargoturnover,
+			int factcargolimit, int factbay, int[] factdemandh,
+			boolean truckpriority, boolean truckMode, int truckQty,
+			double truckSpd, double truckAccSpd, double truckDecSpd,
+			double truckTimeGap, double truckDistGap, double truckPoliteness,
+			double truckChanging, double truckfewcargo, double truckfewocargo,
+			boolean agvMode, int agvQty, double agvSpd, double agvAccSpd,
+			double agvDecSpd, double agvTimeGap, double agvDistGap,
+			double agvfewcargo, double agvfewocargo, double tIMESTEP_S,
+			int tsleep_ms, double scale, boolean suspended) {
+		super();
+		this.starthour = starthour;
+		this.startminute = startminute;
+		this.endday = endday;
+		this.endhour = endhour;
+		this.endminute = endminute;
+		this.fuelcost = fuelcost;
+		CDCstarth = cDCstarth;
+		CDCstartm = cDCstartm;
+		CDCendh = cDCendh;
+		CDCendm = cDCendm;
+		CDCcargoturnover = cDCcargoturnover;
+		CDCcargolimit = cDCcargolimit;
+		CDCbay = cDCbay;
+		CDCdemandh = cDCdemandh;
+		Factstarth = factstarth;
+		Factstartm = factstartm;
+		Factendh = factendh;
+		Factendm = factendm;
+		Factcargoturnover = factcargoturnover;
+		Factcargolimit = factcargolimit;
+		Factbay = factbay;
+		Factdemandh = factdemandh;
+		Truckpriority = truckpriority;
+		TruckMode = truckMode;
+		TruckQty = truckQty;
+		TruckSpd = truckSpd;
+		TruckAccSpd = truckAccSpd;
+		TruckDecSpd = truckDecSpd;
+		TruckTimeGap = truckTimeGap;
+		TruckDistGap = truckDistGap;
+		TruckPoliteness = truckPoliteness;
+		TruckChanging = truckChanging;
+		Truckfewcargo = truckfewcargo;
+		Truckfewocargo = truckfewocargo;
+		AgvMode = agvMode;
+		AgvQty = agvQty;
+		AgvSpd = agvSpd;
+		AgvAccSpd = agvAccSpd;
+		AgvDecSpd = agvDecSpd;
+		AgvTimeGap = agvTimeGap;
+		AgvDistGap = agvDistGap;
+		Agvfewcargo = agvfewcargo;
+		Agvfewocargo = agvfewocargo;
+		TIMESTEP_S = tIMESTEP_S;
+		this.tsleep_ms = tsleep_ms;
+		this.scale = scale;
+		this.suspended = suspended;
+	}
+
+	
+}

@@ -1,0 +1,17 @@
+package Simulator;
+/**
+ * 
+ * @author Sim Hong Xun
+ *
+ */
+public class AGV extends Vehicle{
+
+	AGV(){
+		super();
+		acceleration = Constant.AgvAccSpd;
+		decceleration = Constant.AgvDecSpd;
+		maxspeed = Constant.AgvSpd;
+		timegap = Constant.AgvTimeGap;
+		distgap = Constant.AgvDistGap;
+	}
+}
